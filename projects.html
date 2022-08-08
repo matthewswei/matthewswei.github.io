@@ -1,114 +1,136 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <title>Matthew Wei</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="pics/headerlogo.png">
-        <link href='css/style.css' rel='stylesheet'>
-    </head>
-    <body>
-        <div class="navbar">
-            <a class="guide" href="index.html">HOME</a>
-            <a class="guide" href="index.html">ABOUT</a>
-            <a class="guide" href="index.html">PROJECTS</a>
-            <a class="guide" href="files/Resume.pdf">RESUME</a>
-            <a class="guide" href="index.html">COURSES</a>
-        </div>
-        <div class="info">
-            <h1>Welcome to my Projects Page!</h1>
-            <p>Here is where you can read and find out more information about all the projects that I have done including both hardware
-                and software. Also, read about the projects that I am currently doing as well. Feel free to check them out!
-            </p>
-        </div>
-        <div class="main">
-            <h2>Hardware Projects</h2>
-            <div class="items">
-                <h3>AM Radio Reciever</h3>
-                <p>This project involved assembling a superheterodyne radio reciever which could demodulate an analog carrier 
-                    signal at a given frequency and recover its message signal, similar to how an AM radio reciever works. In this case,
-                    the message signal was a song. This project was done indivudually and involved constructing amplifiers, bandpass filers,
-                    and envelope detectors.<br><br>
-                    Aside from the components, the usage of oscilloscopes, signal generators, spectrum analysers, network analysers, and
-                    sweep generators were also used to help with debugging and visuallizing the circuit. In the end, the audio it was able
-                    to produce was slightly distorted due to the limitations of an analog filter, but you could still clearly make out the sound it
-                    produced.
-                </p>
-            </div>
-            <div class="items">
-                <h3>Vending Machine Coin Sensor</h3>
-                <p>This project utilized a lot of concepts from backend VLSI circuit design. Designed first by figuring out desired outputs with certain inputs
-                    and then constructed a finite state-diagram to match said conditions. With Karnaugh Maps and binary logic, the diagram was 
-                    converted to a circuit. Using Altera Quartus, I designed the circuit and verified that everything was working properly with the correct inputs and outputs.
-                    Afterwards, the circuit was constructed with a coin detectior. I hooked up an LED block that light up patterns to verify 
-                    that all the inputs and outputs were working as intended. Some components used included D-flip flops and adders.
-                </p>
-            </div>
-            <div class="items">
-                <h3>LED Cube</h3>
-                <p>After my first year, my interest in hardware projects skyrocketed and I wanted to 
-                    build more circuits. I found the hardware labs I took my first year extremely fun and interesting and I wanted to
-                    physically make more hardware projects. After further research, I found out that a 4x4 LED cube project was relativley easy
-                    and inexpensive. This project involved making a 4x4 cube with LEDs and connecting it to an Arduino
-                    to have it produce patterns. It involved soldering LEDs onto copper wire to make a frame and then connecting
-                    all those frames to make a cube.<br><br>
-                    However, this project was without its difficulties. I was able to code the Arduino and solder the wire onto the LEDs, but the
-                    LEDs always broke off whenever I tried to set it up. This is probably due to my inexperience in soldering as this was my first
-                    time doing it. Although I wasn't able to make a cube, I was able to construct a
-                    4x4 LED plate and integrate it with the Arduino.
-                </p>
-            </div>
-            <div class="items">
-                <h3>Coffee Heat Sensor</h3>
-                <p>This project involved designing a circuit which would detect if a mug of coffee was warm or not through contact with
-                    a thermistor. If it was warm, a red LED would light up, informing the user. The task was accomplished by three
-                    other students and I. We were given resistors, capcitors, thermistors, LEDs, comparators, and potentiometers to fullfil
-                     the task. Using the datasheets for the components and manipulating equations, we were able to find the right values 
-                     for each component and successfully construct a working circuit. Throughout the process, we went through datasheets and used 
-                     voltmeters and ammeters to debug our circuit.
-                </p>
-            </div>
-            <div class="items">
-                <h3>Light-Seeking Car</h3>
-                <p>The end goal of this project was to create model car that could navigate away from dark areas and migrate towards areas
-                    of higher lumen concentrations. This project involved the use of semiconductors such as MOSFETs, diodes, and photodiodes. The frame of the
-                    car was built with plastic and a motor was connected to each of the wheels. Potentiometers were used so that I could easily
-                    adjust the resistance tthat determined what level of light that was considered "too dark". Photodiodes were used as light 
-                    detectors and one was connected to each of the wheels to determine if that wheel should stop moving or not.</p>
-            </div>
-            <div class="items">
-                <h3>Others</h3>
-                <p>Personal Computer - Researched parts and built a personal computer. This was my first introduction to anything
-                    hardware related and was the reason I became interested in electrical engineering back in middle school.
-                </p>
-            </div>
-            <h2>Software Projects</h2>
-            <div class="items">
-                <h3>Personal Website</h3>
-                <p>This is the website your looking at right now! Everything (besides the moving particles on the home screen) you see on 
-                    this website was coded all by me (no templates) through HTML, CSS, and JavsScript that I learned myself.<br><br>
-                    DISCLAIMER! This website is coded with HTML, CSS, and JavaScript that I self-taught myself with a limited amount of time with 
-                    no prior experience in these languages. This means THERE ARE BUGS that I have not got around to fix yet. Please disregard them
-                    for the moment. They will be fixed as I learn more about these languages and get more experience.
-                </p>
-            </div>
-            <h2>Current Projects</h2>
-            <div class="items">
-                <h3>Bluetooth Speaker</h3>
-                <p>After watching DD Electroctech's video in which he built an Alexa and Google speaker for under $30, I got inspired
-                    and wanted to build one myself. I am currently conducting research onto the topic and getting the nessissary parts required
-                    to complete the final build.
-                </p>
-            </div>
-            <div class="items">
-                <h3>L502 Processor Emulator</h3>
-                <p>Over winter break, I started to gain an interest in computer architecture and wanted to try coding the famous
-                    8-bit L502 Processor that was used in the original Apple computers and NES. I am currently emulating the processor
-                    in C++ using many resources as references throughout the process.
-                </p>
-            </div>
-        </div>
-    </body>
-    <footer>
-        <p>Matthew S. Wei</p>
-    </footer>
+	<head>
+		<title>Matthew Wei</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Matthew Wei</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html">About Me</a></li>
+											<li><a href="index.html">Experience</a></li>
+											<li><a href="projects.html">Projects</a></li>
+											<li><a href="index.html">Courses</a></li>
+											<li><a href="index.html">Contact</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Projects</h2>
+							<p>Here is a complete list of both hardware and software projects I have done.</p>
+							<p>Some projects are in-progress and have not been completed yet (both school and personal).</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<h3>Linux-Based Operating System</h3>
+								<p><span class="image left"><img src="images/linux.png" alt="" style='border:5px solid #000000'/></a></span>ECE 391 - Computer Systems Engineering</p>
+								<p>Will be done by December (Final project for class)</p>
+								<p>Developed Linux-based operating system using x86 assembly and C.</br></br></br></p>
+								<hr />
+
+								<h3>Silicon Wafer</h3>
+								<p><span class="image left"><img src="images/silicon.png" alt="" style='border:5px solid #000000'/></a></span>ECE 444 - IC Device Theory and Fabrication</p>
+								<p>Will be done by December (Final project for class)</p>
+								<p>Fabricated a 4 inch silicon wafer utilizing clean-room equipment.</br></br></br></p>
+								<hr />
+
+								<h3>Signal Demodulator</h3>
+								<p><span class="image left"><img src="images/signaldemod.PNG" alt="" style='border:5px solid #000000'/></a></span>ECE 210 - Analog Signal Processing</p>
+								<p>Superheteodyne radio reciever using amplifiers, filters, and envelope detectors to demodulate a carrier signal into audio</br></br></br></br></br></p>
+								<hr />
+
+								<h3>Vending Machine Simulator</h3>
+								<p><span class="image left"><img src="images/vendingmachine.PNG" alt="" style='border:5px solid #000000'/></a></span>ECE 120 - Introduction to Computing</p>
+								<p>Simulates coin-detection system of a vending machine using digital components such as flip-flops and logic gates. Designed and simulated using Altera Quartus II.</br></br></br></br></p>
+								<hr />
+
+								<h3>Stack Calculator</h3>
+								<p><span class="image left"><img src="images/calculator.PNG" alt="" style='border:5px solid #000000'/></a></span>ECE 220 - Computer Systems and Programming</p>
+								<p>Developed in LC-3 (16-bit assembly language) a mathematical calculator that does basic math. Calculator uses postfix expression format as an input and manipulates memory and regisiter values.</br></br></br></p>
+								<hr />
+
+								<h3>Apple Watch App</h3>
+								<p><span class="image left"><img src="images/apple.jpg" alt="" style='border:5px solid #000000'/></a></span>Personal - Summer 2022</p>
+								<p>Developed an app which helps users keep track of personal workouts. Created with VCode and Swift.</br></br></br></br></br></p>
+								<hr />
+
+								<h3>Sudoku Solver</h3>
+								<p><span class="image left"><img src="images/sudoku.jpg" alt="" style='border:5px solid #000000'/></a></span>Personal - Spring 2022</p>
+								<p>Solves Sudoku puzzles after giving the program the initial board (As an avid Sudoku player, sometimes you come across a puzzle that is too difficult to solve. This will help me get the solution easily).</br></br></br></p>
+								<hr />
+
+								<h3>Coffee Tempearature Sensor</h3>
+								<p><span class="image left"><img src="images/texasinstruments.png" alt="" style='border:5px solid #000000'/></a></span>ECE 110 - Introduction to Electronics</p>
+								<p>Designed and built circuit which could sense the temperature of a coffee mug and detect if it was too hot or not. Thermistors were used to detect heat and comparator was used to determine heat.</br></br></br></p>
+								<hr />
+
+								<h3>Light-Seeking Car</h3>
+								<p><span class="image left"><img src="images/lightseeker.PNG" alt="" style='border:5px solid #000000'/></a></span>ECE 110 - Introduction to Electronics</p>
+								<p>Constructed a miniature car which drove from darker areas to lighter areas. Car was built using photodetectors for light detection and MOSFETs for controlling motors.</br></br></br></br></p>
+								<hr />
+
+								<h3>LED Cube</h3>
+								<p><span class="image left"><img src="images/cube.jpg" alt="" style='border:5px solid #000000'/></a></span>Personal - Summer 2021</p>
+								<p>Soldered, built, and programmed a 4x4 LED cube using blue LED lights, copper wire, and an Arduino Uno.</br></br></br></br></br></p>
+								<hr />
+
+								<h3>Personal Website</h3>
+								<p><span class="image left"><img src="images/website.png" alt="" style='border:5px solid #000000'/></a></span>Personal - Winter 2021</p>
+								<p>Coded personal website using HTML, CSS, and JavaScript. (Self-taught)</br></br></br></br></br></p>
+								<hr />
+
+								<h3>Personal Computer</h3>
+								<p><span class="image left"><img src="images/pc.jpg" alt="" style='border:5px solid #000000'/></a></span>Personal - Spring 2015</p>
+								<p>Built high performing gaming computer. This was where my interest in electronics began.</br></br></br></br></br></p>
+								<hr />
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Matthew Wei</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
